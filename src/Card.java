@@ -5,9 +5,9 @@
  */
 public class Card {
 
-	private String suit;
-	private String rank;
-	private int pointValue;
+	private String suit;//The suit of the card
+	private String rank;//The rank of the card as a string
+	private int pointValue;//How many points the card is worth
 
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		rank = cardRank;
@@ -19,11 +19,11 @@ public class Card {
 		return suit;//Accesses the Card's suit and returns the Card's suit	
    }
 
-	public String getrank() {
+	public String getrank() {//Accesses the Card's rank
 		return rank;
 	}
 
-	public int getpointValue() {
+	public int getpointValue() {//Accesses the Card's point value
 		return pointValue;
 	}
 
@@ -42,7 +42,7 @@ public class Card {
 		
 	}
 
-	public String toString() {
+	public String toString() {//print the card as a string
 		return rank + " of " + suit + "\nPoint Value = " + (pointValue);
 		
 	}
