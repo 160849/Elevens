@@ -8,9 +8,9 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		String[] rankArray = {"Ace", "Jack", "King", "Queen"};
+		String[] rankArray = {"Ace", "Jack", "King", "Queen", "Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"};
 		String[] SuitArray = {"Spades", "Diamonds", "Clubs", "Hearts"};
-		Integer[] pointArray = {1, 2, 3, 4};
+		Integer[] pointArray = {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 		Deck Bicycle = new Deck(rankArray, SuitArray, pointArray);
 		System.out.println(Bicycle.toString());
 		}

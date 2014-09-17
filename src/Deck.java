@@ -17,15 +17,16 @@ public class Deck {
 		ArrayList<String> rank = new ArrayList<String>(Arrays.asList(ranks));
 		ArrayList<Integer> point = new ArrayList<Integer>(Arrays.asList(values));
 		cards = new ArrayList<Card>();
+		if (suit.size() == 4){
 		for (int i = 0; i < rank.size(); i++){
-			String arrayrank = rank.get(i);
-			String arraysuit = suit.get(i);
-			Integer arrayvalue = point.get(i);
-			Card card = new Card(arrayrank, arraysuit, arrayvalue);
+			for (int j= 0; j < suit.size(); j++){
+			Card card = new Card(rank.get(i), suit.get(j), point.get(i));
 			cards.add(card);
+			}
 			size = cards.size();
 		}
 	}
+}
 	
 	public boolean isEmpty() {
 		if (size < 1){
@@ -65,8 +66,6 @@ public class Deck {
 		}
 		System.out.println("There are no more cards to deal");
 			return null;
-			
-		
 	}
 
 	/**
